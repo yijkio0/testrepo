@@ -11,7 +11,8 @@ import {
   Compass,
   Star,
   LineChart,
-  Users
+  Users,
+  LayoutDashboard
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -22,6 +23,7 @@ import { useUser } from "@/hooks/use-user";
 
 const baseNavItems = [
   { href: "/feed", icon: Home, label: "Feed" },
+  { href: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
   { href: "/communities", icon: Users, label: "Communities" },
   { href: "/analytics", icon: LineChart, label: "Analytics" },
   { href: "/messages", icon: MessageSquare, label: "Messages", badge: 3 },
